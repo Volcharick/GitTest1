@@ -4,49 +4,24 @@
 *,
 *::before,
 *::after{
-    border: 0;
-    margin: 0;
-    padding: 0;
+    border: 1;
+    margin: 1;
+    padding: 1;
     box-sizing: border-box;
 }
 li{
     list-style: none;
 }
-a,
-a:hover,
-a:visited{
-    text-decoration: none;
-}
 img{
     vertical-align: top;
 }
-h1,h2,h3,h4,h5,h6{
-    font-size: inherit;
-    font-weight: inherit;
-}
-body{
-    height: 100%;
-    line-height: 1;
-}
-html{
-    height: 100%;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
 
-.wrapper{
-    min-height: 100%;
-    overflow: hidden;
-    width: 92%;
-    margin: 0 auto;
-}
 
 /* !Структура */
 
 /* !header */
 
 nav{
-    margin: 58px 92px 71px 53px;
     display: flex;
     width: 85%;
     justify-content: flex-start;
@@ -61,7 +36,6 @@ main{
     display: flex;
     width: 65%;
     border-bottom: 1px solid black; 
-    padding: 0px 12px 22px 0px;
     justify-content: space-around;
 }
 .menu__logo {
@@ -94,7 +68,7 @@ main{
     font-size: 18px;
     line-height: 22px;
     text-transform: capitalize;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
     align-self:center;
 }
 
