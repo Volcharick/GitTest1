@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Категории и ингредиенты</title>
+</head>
+<body>
+    <header></header>
+    <nav class="noselect">
+        <div class="menu">
+            <ol>
+                {%for category in categorys%}    
+                    <li>
+                        {{category}}
+                        <ul>
+                        {%for ingredient in ingredients%}
+                            {% if category.category_id == ingredient.parent_id %}
+                                <li><a href= "{% url 'about-name' category=category ingredient=ingredient %}">{{ingredient}}</a></li>
+                                {% comment %} <li><a href= "{% Ingredients.rev %}">{{ingredient}}</a></li> {% endcomment %}
+                                {%endif%}
+                        {%endfor%}
+                        </ul>
+                    </li>
+                {%endfor%}    
+                </ol> 
+                {%for punkt in categ_foreign.ingredien.all%}
+                    <div style = "color:red">{{punkt}}</div>
+                {%endfor%}
+                <div>{{categ_foreign.ingredien.all}}</div>
+
+            <div>I choose {{our_category}} category</div>
+        </div>
+    </nav>   
+</body>
+</html>
