@@ -28,7 +28,6 @@ class RatingFilter(admin.SimpleListFilter):
     def lookups(self, request, model_admin):
         return [
             ('first-second-third',"Группа 1: fst"),
-            ('fourth-fifth-sixth',"Группа 2: ffs"),
             ('seventh-eighth-ninth',"Группа 3: sen"),
             ("tenth","Группа 4: t")
         ]

@@ -29,8 +29,6 @@ def about_page(request, category:str, ingredient: str):
 
 def under_about(request, category:str):
     all_ingredients = Ingredients.objects.all()
-    all_category = Category.objects.order_by("-name")
-    agg = all_category.aggregate(Max('name'))
     for ingredient_slug in all_ingredients:
         ingredient_slug.save()
     categ_foreign = Category.objects.all()[0]
