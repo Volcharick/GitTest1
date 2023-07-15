@@ -36,8 +36,6 @@ class RatingFilter(admin.SimpleListFilter):
             return queryset.filter(parent_id__in=[1,2,3])
         elif self.value() == "fourth-fifth-sixth":
             return queryset.filter(parent_id__in=[4,5,6])
-        elif self.value() == "seventh-eighth-ninth":
-            return queryset.filter(parent_id__in=[7,8,9])
 
 
 
