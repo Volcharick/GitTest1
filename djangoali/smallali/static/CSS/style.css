@@ -62,21 +62,14 @@ main{
     height: 54px;
     vertical-align: middle;
 }
-.menu__title {
-    font-style: normal;
-    font-weight: 400;
-    align-self:center;
-}
+
 
 .menu__img {
     vertical-align: middle;
 }
-.page-name {
-    margin-top: 7px;
-    margin-left: auto;
-}
+
 .page-name__title {
-    font-style: normal;
+    font-style: italic;
     font-weight: 500;
     font-size: 30px;
     line-height: 37px;
