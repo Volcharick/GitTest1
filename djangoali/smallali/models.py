@@ -5,8 +5,7 @@ from django.utils.text import slugify
 
 class Prodavec(models.Model):
     name = models.CharField(max_length=100, blank=False)
-    def __str__(self):
-        return f'{self.name}'
+
     
 class Sohranenia(models.Model):
     name = models.CharField(max_length=100, blank=False)
