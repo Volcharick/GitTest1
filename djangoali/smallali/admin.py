@@ -34,8 +34,6 @@ class RatingFilter(admin.SimpleListFilter):
     def queryset(self, request, queryset):
         if self.value() == "first-second-third":
             return queryset.filter(parent_id__in=[1,2,3])
-        elif self.value() == "fourth-fifth-sixth":
-            return queryset.filter(parent_id__in=[4,5,6])
 
 
 
